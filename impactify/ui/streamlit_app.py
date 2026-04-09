@@ -1,4 +1,10 @@
 # ui/streamlit_app.py
+import sys
+import os
+
+# Add the project root directory to the python path
+# This allows the 'from impactify.graph.graph import ...' line to work
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 import streamlit as st
 from langchain_core.messages import HumanMessage, AIMessage
 from impactify.graph.graph import build_graph
