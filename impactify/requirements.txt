@@ -1,7 +1,9 @@
-langchain>=0.3.0
-langchain-openai>=0.2.0
-langgraph>=0.2.0
-pydantic>=2.7.0
-fastapi>=0.115.0
-uvicorn>=0.30.0
-python-dotenv>=1.0.1
+streamlit
+langchain-core
+langchain-groq
+langgraph
+groq
+python-dotenv
+pydantic
+fastapi
+uvicorn

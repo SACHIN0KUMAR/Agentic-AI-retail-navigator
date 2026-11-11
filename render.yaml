@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: impactify-retail-navigator
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run impactify/ui/streamlit_app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: GROQ_API_KEY
+        sync: false
